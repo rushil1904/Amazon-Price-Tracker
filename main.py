@@ -52,8 +52,8 @@ def search_product(interval_count = 1, interval_hours = 6):
                     server = smtplib.SMTP(host='smtp.gmail.com', port=587)
                     server.ehlo()
                     server.starttls()
-                    server.login('#','##')
-                    server.sendmail('#','##', mailtext)
+                    server.login('#','##')      #Enter your mail id and password
+                    server.sendmail('#','##', mailtext)   #Enter subject and message of the mail
             except:
                 pass
             tracker_log = tracker_log.append(log)
